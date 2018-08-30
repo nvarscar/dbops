@@ -1,12 +1,9 @@
----
-layout: post
-title: dbops - functions
 # dbops functions
 
 ## > deployment
 
-[Install-DBOPackage](./Install-DBOPackage.md) - initiate the deployment of the SQL code package<br/>
-[Invoke-DBODeployment](./Invoke-DBODeployment.md) - perform ad-hoc deployment of plaintext files or packages
+[Install-DBOPackage](./install-dbopackage.md) - initiate the deployment of the SQL code package<br/>
+[Invoke-DBODeployment](invoke-dbodeployment.md) - perform ad-hoc deployment of plaintext files or packages
 
 ## > package management
 

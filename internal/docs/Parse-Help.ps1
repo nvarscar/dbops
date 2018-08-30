@@ -31,5 +31,5 @@ foreach ($command in $commands) {
 	$output = $output -replace '\@functionName', $help.name
 	$output = $output -replace '\@parameters', ($parameters -join "`r`n")
 	$output = $output -replace '\@examples', ($examples -join "`r`n")
-	$output | Out-File -FilePath "$PSScriptRoot\$($help.name).md" -Encoding unicode
+	$output | Out-File -FilePath "$PSScriptRoot\$($help.name.ToLower()).md" -Encoding unicode
 }
