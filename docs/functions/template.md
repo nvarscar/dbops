@@ -1,10 +1,10 @@
-### [< back to functions](functions.md)
+### [< back to functions](index.md)
 
 # @functionName
 
 @description
 
-![@functionName](../img/@functionName.gif)
+![@functionShortName](../img/@functionName.gif)
 
 ## parameters
 

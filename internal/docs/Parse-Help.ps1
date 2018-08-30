@@ -7,6 +7,7 @@ $template = Get-Content $PSScriptRoot\..\..\docs\functions\template.md -Raw
 
 foreach ($command in $commands) {
 	$help = Get-Help $command
+	$sn = $help.Name.Replace('-','')
 	$parameters = @()
 	foreach ($p in $help.parameters.parameter) {
 		$outParam = @()
@@ -29,7 +30,8 @@ foreach ($command in $commands) {
 	$output = $template
 	$output = $output -replace '\@description', $help.description.Text
 	$output = $output -replace '\@functionName', $help.name
+	$output = $output -replace '\@functionShortName', $sn
 	$output = $output -replace '\@parameters', ($parameters -join "`r`n")
 	$output = $output -replace '\@examples', ($examples -join "`r`n")
-	$output | Out-File -FilePath "$PSScriptRoot\$($help.name.ToLower()).md" -Encoding unicode
+	$output | Out-File -FilePath "$PSScriptRoot\$($sn).md" -Encoding unicode
 }
