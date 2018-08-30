@@ -120,6 +120,8 @@ Get-DBOPackageArtifact -Path myPackage.zip -Repository \\data\repo | Install-DBO
 * Deployments to multiple databases at once
 * Optional rollback scripts
 
+## Functions
+[List of the functions](functions.md)
 ## Contacts
 Submitting issues - [GitHub issues](https://github.com/sqlcollaborative/dbops/issues)
 SQLCommunity Slack: https://sqlcommunity.slack.com #devops or @nvarscar
