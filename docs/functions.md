@@ -1,3 +1,6 @@
+---
+layout: post
+title: dbops - functions
 # dbops functions
 
 ## > deployment

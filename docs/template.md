@@ -2,7 +2,7 @@
 layout: post
 title: dbops - function @functionName
 ---
-### [< back to functions](index.md)
+### [< back to functions](functions.md)
 
 # @functionName
 
